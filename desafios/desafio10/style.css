@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'tec';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+}
+*{
+    max-width: 100%;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgreen;
+    max-width: 100%;
+    max-height: 100%;
+}
+header{
+    padding-top: 1px;
+    padding-bottom: 3px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(rgb(0, 204, 0), darkgreen) ;
+    color: white;
+}
+header>h1{
+    font-size: larger;
+    font-weight: 700;
+    
+}
+header>nav{
+    text-align: left;
+    padding: 10px;
+    
+}
+nav>a{
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(149, 194, 82);
+}
+nav>a:hover{
+    border-radius: 3px;
+    background-color: darkgreen;
+}
+main{
+    
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+    background-color: white;
+    text-align: justify;
+    text-indent: 25px;
+}
+main img{
+    width: 100%;
+}
+.fonte{
+    color: darkgreen;
+    font-family: 'tec';
+    text-indent: 0px;
+}
+h2{
+    background-color: rgba(0, 255, 0, 0.216);
+}
+
+iframe{
+    border: 40px;
+    border-color: darkgreen;
+    background-color: darkgreen;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+#quer{
+    text-align: justify;
+    background-color: lightgreen;
+    border-radius: 15px;
+}
+#quer>h3{
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(32, 155, 32);
+}
+#quer>p{
+    padding: 10px;
+}
+
+#quer>ol>li>a{
+    text-decoration: none;
+}
+footer{
+    
+    text-align: center;
+    background-color: darkgreen;
+}
