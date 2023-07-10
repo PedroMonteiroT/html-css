@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    max-width: 100%;
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+}
+div{
+    position: relative;
+}
+
+iframe{
+    height: 40rem;
+    width: 20rem;
+}
