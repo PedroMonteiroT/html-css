@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* todas as medias 
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
+
+@media print {  /*  IMPRESSÃO  */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Fiz essa impressão aq';
+        text-decoration: overline;
+
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg); /* desnecessário */
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    h1#cll{display: none;}
+    h1#tbt{display: block;}
+    h1#impressora{display: none;}
+    h1#computador{display: none;}
+    h1#teve{display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){ /* DESKTOP */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+    h1#cll{display: none;}
+    h1#tbt{display: none;}
+    h1#impressora{display: none;}
+    h1#computador{display: block;}
+    h1#teve{display: none;}
+}
+@media screen and (min-width: 1200px){  /* TELAS GRANDES */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+    h1#cll{display: none;}
+    h1#tbt{display: none;}
+    h1#impressora{display: none;}
+    h1#computador{display: none;}
+    h1#teve{display: block;}
+}
